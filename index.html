@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MG Ingeniería y Proyectos S.A.S. | Excelencia Vertical</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-[#020617] overflow-hidden select-none">
+  <!-- SVG CHROMA-KEY FILTER FOR LOGO -->
+  <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="chroma-white">
+        <feColorMatrix type="matrix" values="1 0 0 0 0
+                                               0 1 0 0 0
+                                               0 0 1 0 0
+                                               -1.1 -1.1 -1.1 3.3 0" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- PUERTAS DEL ELEVADOR -->
+  <div id="elevator-doors" class="fixed inset-0 pointer-events-none z-[2000]">
+    <div id="door-left" class="elevator-door door-left"></div>
+    <div id="door-right" class="elevator-door door-right"></div>
+  </div>
+
+  <!-- INDICADOR DE PISO CORPORATIVO -->
+  <div class="floor-indicator-container">
+    <div class="flex items-center gap-6">
+      <span id="floor-indicator" class="text-3xl font-black text-slate-900 tracking-tighter">00</span>
+      <div class="h-8 w-px bg-slate-200"></div>
+      <span id="floor-name" class="text-[11px] font-black uppercase tracking-[0.3em] text-slate-400">Iniciando
+        Sistemas...</span>
+    </div>
+  </div>
+
+  <!-- NAVEGACIÓN LATERAL (CONTROL DE ELEVADOR) -->
+  <nav class="elevator-panel">
+    <button class="floor-btn" data-floor="home" title="Inicio">0</button>
+    <button class="floor-btn" data-floor="about" title="Historia">1</button>
+    <button class="floor-btn" data-floor="methodology" title="Metodología">2</button>
+    <button class="floor-btn" data-floor="services" title="Servicios">3</button>
+    <button class="floor-btn" data-floor="projects" title="Proyectos">4</button>
+    <button class="floor-btn" data-floor="faq" title="FAQ">5</button>
+    <button class="floor-btn" data-floor="contact" title="Contacto">6</button>
+    <div class="h-px bg-slate-200/50 my-2"></div>
+    <button class="floor-btn text-[10px]" data-floor="admin" title="Admin">AD</button>
+  </nav>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div id="app">
+    <main id="main-content">
+      <!-- Inyectado por main.js -->
+    </main>
+  </div>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a href="https://wa.me/573205515134" target="_blank" class="whatsapp-float" title="Soporte Técnico WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle">
+      <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+    </svg>
+  </a>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

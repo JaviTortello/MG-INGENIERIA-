@@ -1,0 +1,124 @@
+[debug] [2026-03-10T02:02:09.374Z] ----------------------------------------------------------------------
+[debug] [2026-03-10T02:02:09.389Z] Command:       C:\Program Files\nodejs\node.exe c:\Users\EQUIPO\Documents\MG\node_modules\firebase-tools\lib\bin\firebase.js init apphosting
+[debug] [2026-03-10T02:02:09.390Z] CLI Version:   15.9.1
+[debug] [2026-03-10T02:02:09.390Z] Platform:      win32
+[debug] [2026-03-10T02:02:09.390Z] Node Version:  v24.14.0
+[debug] [2026-03-10T02:02:09.391Z] Time:          Mon Mar 09 2026 21:02:09 GMT-0500 (hora estándar de Colombia)
+[debug] [2026-03-10T02:02:09.391Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  c:\Users\EQUIPO\Documents\MG
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-03-10T02:02:18.745Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-10T02:02:18.746Z] > authorizing via signed-in user (yeitiem.22@gmail.com)
+[debug] [2026-03-10T02:02:18.748Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:18.748Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:18.750Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ascensoresmgingenieria [none]
+[debug] [2026-03-10T02:02:19.097Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ascensoresmgingenieria 200
+[debug] [2026-03-10T02:02:19.098Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ascensoresmgingenieria {"projectId":"ascensoresmgingenieria","projectNumber":"996537997096","displayName":"ASCENSORESMGINGENIERIA","name":"projects/ascensoresmgingenieria","resources":{"hostingSite":"ascensoresmgingenieria"},"state":"ACTIVE","etag":"1_bf5bf8a0-f06c-40e2-a12c-833acefd12ee"}
+[info] i  Using project ascensoresmgingenieria (ASCENSORESMGINGENIERIA) . 
+[info] 
+=== App Hosting Setup
+[debug] [2026-03-10T02:02:19.120Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:19.121Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:19.121Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/ascensoresmgingenieria/billingInfo [none]
+[debug] [2026-03-10T02:02:19.555Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/ascensoresmgingenieria/billingInfo 200
+[debug] [2026-03-10T02:02:19.556Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/ascensoresmgingenieria/billingInfo {"name":"projects/ascensoresmgingenieria/billingInfo","projectId":"ascensoresmgingenieria","billingAccountName":"billingAccounts/01CFDF-801B29-0850F7","billingEnabled":true}
+[debug] [2026-03-10T02:02:19.558Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:19.558Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:19.559Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-03-10T02:02:19.559Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/firebaseapphosting.googleapis.com  x-goog-user-project=ascensoresmgingenieria
+[debug] [2026-03-10T02:02:20.265Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-03-10T02:02:20.266Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-03-10T02:02:20.266Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:20.266Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:20.267Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/firebaseapphosting.googleapis.com:enable [none]
+[debug] [2026-03-10T02:02:20.267Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/firebaseapphosting.googleapis.com:enable  x-goog-user-project=ascensoresmgingenieria
+[debug] [2026-03-10T02:02:21.190Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/firebaseapphosting.googleapis.com:enable 200
+[debug] [2026-03-10T02:02:21.191Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/firebaseapphosting.googleapis.com:enable [omitted]
+[debug] [2026-03-10T02:02:31.222Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.223Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.223Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.223Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.224Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.224Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.224Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.224Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.225Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.225Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.225Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.226Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.226Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/developerconnect.googleapis.com [none]
+[debug] [2026-03-10T02:02:31.226Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/developerconnect.googleapis.com  x-goog-user-project=ascensoresmgingenieria
+[debug] [2026-03-10T02:02:31.229Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/cloudbuild.googleapis.com [none]
+[debug] [2026-03-10T02:02:31.229Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/cloudbuild.googleapis.com  x-goog-user-project=ascensoresmgingenieria
+[debug] [2026-03-10T02:02:31.231Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/secretmanager.googleapis.com [none]
+[debug] [2026-03-10T02:02:31.231Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/secretmanager.googleapis.com  x-goog-user-project=ascensoresmgingenieria
+[debug] [2026-03-10T02:02:31.234Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/run.googleapis.com [none]
+[debug] [2026-03-10T02:02:31.234Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/run.googleapis.com  x-goog-user-project=ascensoresmgingenieria
+[debug] [2026-03-10T02:02:31.237Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/artifactregistry.googleapis.com [none]
+[debug] [2026-03-10T02:02:31.237Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/artifactregistry.googleapis.com  x-goog-user-project=ascensoresmgingenieria
+[debug] [2026-03-10T02:02:31.241Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/iam.googleapis.com [none]
+[debug] [2026-03-10T02:02:31.241Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/iam.googleapis.com  x-goog-user-project=ascensoresmgingenieria
+[debug] [2026-03-10T02:02:31.867Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/secretmanager.googleapis.com 200
+[debug] [2026-03-10T02:02:31.867Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/secretmanager.googleapis.com [omitted]
+[debug] [2026-03-10T02:02:31.884Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/cloudbuild.googleapis.com 200
+[debug] [2026-03-10T02:02:31.884Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/cloudbuild.googleapis.com [omitted]
+[debug] [2026-03-10T02:02:31.899Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/artifactregistry.googleapis.com 200
+[debug] [2026-03-10T02:02:31.899Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/artifactregistry.googleapis.com [omitted]
+[debug] [2026-03-10T02:02:31.913Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/iam.googleapis.com 200
+[debug] [2026-03-10T02:02:31.914Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/iam.googleapis.com [omitted]
+[debug] [2026-03-10T02:02:31.927Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/developerconnect.googleapis.com 200
+[debug] [2026-03-10T02:02:31.927Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/developerconnect.googleapis.com [omitted]
+[debug] [2026-03-10T02:02:31.928Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.928Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:31.928Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/developerconnect.googleapis.com:enable [none]
+[debug] [2026-03-10T02:02:31.929Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/developerconnect.googleapis.com:enable  x-goog-user-project=ascensoresmgingenieria
+[debug] [2026-03-10T02:02:31.935Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/run.googleapis.com 200
+[debug] [2026-03-10T02:02:31.935Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/run.googleapis.com [omitted]
+[debug] [2026-03-10T02:02:32.891Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/developerconnect.googleapis.com:enable 200
+[debug] [2026-03-10T02:02:32.892Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ascensoresmgingenieria/services/developerconnect.googleapis.com:enable [omitted]
+[debug] [2026-03-10T02:02:42.918Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:42.918Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:42.919Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/ascensoresmgingenieria/serviceAccounts/firebase-app-hosting-compute@ascensoresmgingenieria.iam.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-03-10T02:02:42.919Z] >>> [apiv2][(partial)header] POST https://iam.googleapis.com/v1/projects/ascensoresmgingenieria/serviceAccounts/firebase-app-hosting-compute@ascensoresmgingenieria.iam.gserviceaccount.com:testIamPermissions  x-goog-user-project=ascensoresmgingenieria
+[debug] [2026-03-10T02:02:42.919Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/ascensoresmgingenieria/serviceAccounts/firebase-app-hosting-compute@ascensoresmgingenieria.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-03-10T02:02:43.454Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/ascensoresmgingenieria/serviceAccounts/firebase-app-hosting-compute@ascensoresmgingenieria.iam.gserviceaccount.com:testIamPermissions 404
+[debug] [2026-03-10T02:02:43.455Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/ascensoresmgingenieria/serviceAccounts/firebase-app-hosting-compute@ascensoresmgingenieria.iam.gserviceaccount.com:testIamPermissions {"error":{"code":404,"message":"Unknown service account","status":"NOT_FOUND"}}
+[debug] [2026-03-10T02:02:43.457Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:43.457Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:43.457Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/ascensoresmgingenieria/serviceAccounts [none]
+[debug] [2026-03-10T02:02:43.457Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/ascensoresmgingenieria/serviceAccounts {"accountId":"firebase-app-hosting-compute","serviceAccount":{"displayName":"Firebase App Hosting compute service account","description":"Default service account used to run builds and deploys for Firebase App Hosting"}}
+[debug] [2026-03-10T02:02:44.087Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/ascensoresmgingenieria/serviceAccounts 200
+[debug] [2026-03-10T02:02:44.087Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/ascensoresmgingenieria/serviceAccounts [omitted]
+[debug] [2026-03-10T02:02:44.088Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:44.088Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:44.088Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ascensoresmgingenieria:getIamPolicy [none]
+[debug] [2026-03-10T02:02:44.745Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ascensoresmgingenieria:getIamPolicy 200
+[debug] [2026-03-10T02:02:44.746Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ascensoresmgingenieria:getIamPolicy {"version":1,"etag":"BwZMoelFSso=","bindings":[{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:996537997096@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-996537997096@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-996537997096@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:996537997096-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-996537997096@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@ascensoresmgingenieria.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@ascensoresmgingenieria.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yeitiem.22@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-996537997096@serverless-robot-prod.iam.gserviceaccount.com"]}]}
+[debug] [2026-03-10T02:02:44.747Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:44.747Z] Checked if tokens are valid: true, expires at: 1773109786604
+[debug] [2026-03-10T02:02:44.747Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ascensoresmgingenieria:setIamPolicy [none]
+[debug] [2026-03-10T02:02:44.747Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ascensoresmgingenieria:setIamPolicy {"policy":{"version":1,"etag":"BwZMoelFSso=","bindings":[{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:996537997096@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-996537997096@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-996537997096@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:996537997096-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-996537997096@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@ascensoresmgingenieria.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@ascensoresmgingenieria.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@ascensoresmgingenieria.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:yeitiem.22@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-996537997096@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@ascensoresmgingenieria.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@ascensoresmgingenieria.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@ascensoresmgingenieria.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2026-03-10T02:02:45.237Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ascensoresmgingenieria:setIamPolicy 400
+[debug] [2026-03-10T02:02:45.238Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ascensoresmgingenieria:setIamPolicy {"error":{"code":400,"message":"Service account firebase-app-hosting-compute@ascensoresmgingenieria.iam.gserviceaccount.com does not exist.","status":"INVALID_ARGUMENT"}}
+[warn] !  Your App Hosting compute service account is still being provisioned in the background. If you encounter an error, please try again after a few moments. 
+[info] i  This command links your local project to Firebase App Hosting. You will be able to deploy your web app with `firebase deploy` after setup. 
